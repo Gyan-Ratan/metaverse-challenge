@@ -12,11 +12,11 @@ function Header() {
                <div className='relative h-12 w-12 mx-auto hidden lg:inline-grid'>
                    <Image 
                     layout='fill' 
-                    className=' object-cover' 
+                    className='rounded-full object-cover' 
                     src={profile}
                     />
                </div>
-               <div>
+               <div className='text-left lg:text'>
 
                    <div className='relative h-48 w-48 lg:mx-auto border-pink-400 border-8 rounded-full'>  
                        {/* avatar */}
@@ -25,7 +25,7 @@ function Header() {
 
                    {/* welcome msg */}
                    <h1 className='text-3xl'>Welcome to New Gen chat app</h1>
-                   <h2>{user.getUsername('')}</h2>
+                   <h2 className='text-5xl font-bold truncate'>{user.getUsername('')}</h2>
                    {/* username */}
 
                    {/* change username components */}
