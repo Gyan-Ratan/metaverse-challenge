@@ -29,7 +29,7 @@ function Header() {
                    {/* username */}
 
                    {/* change username components */}
-
+                    <ChangeUsername />
                </div>
            </div>
         </div>
