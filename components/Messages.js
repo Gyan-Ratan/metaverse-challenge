@@ -27,6 +27,9 @@ function Messages() {
 
             <div>
                 {/* Each Messages */}
+                {data.map((message) => (
+                    <Message key={message.id} message={message} />
+                ))}
             </div>
             
             <div className="flex justify-center">
