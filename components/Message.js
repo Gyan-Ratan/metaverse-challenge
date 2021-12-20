@@ -1,5 +1,5 @@
 import { useMoralis, useMoralisQuery } from "react-moralis";
-import Avatar from "./Avatar";
+import Avatar from "/components/Avatar";
 
 function Message({ message }) {
     const { user } = useMoralis();
@@ -7,8 +7,7 @@ function Message({ message }) {
     const isUserMessage = message.get("ethAddress") === user.get("ethAddress");
 
     return (
-        <div className={`flez items-end space-x-2 relative ${isUserMessage && "justify-end"
-    }`}>
+        <div className={`flez items-end space-x-2 relative ${isUserMessage && "justify-end"}`}>
         <div className={`relative h-8 w-8 ${isUserMessage && "order-last ml-2"}`}>
             <Avatar username={message.get("username")} />
         </div>

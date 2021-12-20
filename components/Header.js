@@ -9,7 +9,7 @@ import profile from '/images/profile.jpg'
 function Header() {
     const {user,logout}= useMoralis();
     return (
-        <div className='sticky top-0 p-5 z-50 bg-black shadow-sm  text-pink-500 border-pink-700'>
+        <div className='sticky top-0 p-5 z-50 bg-black shadow-sm  text-pink-500 border-b-2 border-pink-700'>
            <div className='grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center'>
                <div className='relative h-12 w-12 mx-auto hidden lg:inline-grid'>
                    <Image 

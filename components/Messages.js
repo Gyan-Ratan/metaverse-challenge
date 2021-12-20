@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { ByMoralis, useMoralis, useMoralisQuery} from "react-moralis";
 import SendMessage from "/components/SendMessages";
-import Message from '/components/Message'
+import Message from "/components/Message";
 // Only show messages from the last 15  minutes
 const MINS_DURATION = 15;
 function Messages() {
@@ -33,10 +33,10 @@ function Messages() {
             </div>
             
             <div className="flex justify-center">
-                <SendMessage />
+                <SendMessage endOfMessagesRef={endOfMessagesRef}/>
             </div>
 
-            <div className="text-center text-gray-400 mt-5">
+            <div ref={endOfMessagesRef} className="text-center text-gray-400 mt-5">
                 <p>You're up to date {user.getUsername()}!</p>
             </div>
         </div>
