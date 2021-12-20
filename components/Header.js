@@ -7,7 +7,7 @@ import profile from '/images/profile.jpg'
 function Header() {
     const {user}= useMoralis();
     return (
-        <div>
+        <div className='text-pink-500'>
            <div>
                <div className='relative h-12 w-12 mx-auto hidden lg:inline-grid'>
                    <Image 
@@ -18,12 +18,14 @@ function Header() {
                </div>
                <div>
 
-                   <div>  
+                   <div className='relative h-48 w-48 lg:mx-auto border-pink-400 border-8 rounded-full'>  
                        {/* avatar */}
-                        {/* <Avatar logoutOnPress={}/> */}
+                        {/* <Avatar logoutOnPress/> */}
                     </div>
 
                    {/* welcome msg */}
+                   <h1 className='text-3xl'>Welcome to New Gen chat app</h1>
+                   <h2>{user.getUsername('')}</h2>
                    {/* username */}
 
                    {/* change username components */}
