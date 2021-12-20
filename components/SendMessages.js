@@ -27,7 +27,7 @@ function SendMessages() {
     return (
         <form className='flex fixed bottom-10 bg-black opacity-80 w-11/12 px-6 py-4 max-w-2xl shadow-xl rounded-full border-4 border-blue-400'>
             <input
-                className='outline-none bg-transparent text-white placeholder-gray-500'
+                className='flex-grow outline-none bg-transparent text-white placeholder-gray-500'
                 type='text'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}

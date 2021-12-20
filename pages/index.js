@@ -20,7 +20,7 @@ export default function Home() {
 
       <Messages />
       </div>
-      <button onClick={logout}>logout</button>
+      
 
     </div>
   )

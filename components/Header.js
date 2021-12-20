@@ -4,10 +4,10 @@ import { useMoralis } from "react-moralis";
 import Avatar from './Avatar';
 import ChangeUsername from '/components/ChangeUsername';
 import profile from '/images/profile.jpg'
-import ChangeUsername from '/components/ChangeUsername'
+
 
 function Header() {
-    const {user}= useMoralis();
+    const {user,logout}= useMoralis();
     return (
         <div className='sticky top-0 p-5 z-50 bg-black shadow-sm  text-pink-500 border-pink-700'>
            <div className='grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center'>
@@ -22,7 +22,7 @@ function Header() {
 
                    <div className='relative h-48 w-48 lg:mx-auto border-pink-500 border-8 rounded-full'>  
                        {/* avatar */}
-                        {/* <Avatar logoutOnPress/> */}
+                        <Avatar logoutOnPress/>
                     </div>
 
                    {/* welcome msg */}
@@ -31,7 +31,9 @@ function Header() {
                    {/* username */}
 
                    {/* change username components */}
+                   <button className='bg-yellow-500 rounded-lg p-5 font-bold text-black'onClick={logout}>logout</button>
                     <ChangeUsername />
+                    
                </div>
            </div>
         </div>
