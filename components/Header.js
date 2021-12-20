@@ -3,6 +3,7 @@ import React from 'react'
 import { useMoralis } from "react-moralis";
 import Avatar from './Avatar';
 import profile from '/images/profile.jpg'
+import ChangeUsername from '/components/ChangeUsername'
 
 function Header() {
     const {user}= useMoralis();
