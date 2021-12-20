@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <div className="h-screen overflow-y-scroll bg-gradient-to-b from-black  to-fuchsia-500 overflow-hidden">
       <Head>
-        <title>metaverse challenge</title>
+        <title>NxtGen Chat</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
-      <button onClick={logout}>logout</button>
+    
     </div>
   )
 }
