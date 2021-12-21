@@ -23,6 +23,7 @@ function SendMessages({endOfMessagesRef}) {
             }
         );
         endOfMessagesRef.current.scrollIntoView({ behavior: 'smooth' });
+        setMessage('');
     };
 
     return (
@@ -32,7 +33,7 @@ function SendMessages({endOfMessagesRef}) {
                 className='flex-grow outline-none bg-transparent text-white placeholder-gray-500 pr-5'
                 type='text'
                 value={message}
-                onChange={e => setMessage(e.target.value)}
+                onChange={(e) => setMessage(e.target.value)}
                 placeholder={`Enter a Message ${user.getUsername()}`}
             />
             <button type="submit" onClick={sendMessage} className='font-bold text-pink-500'>send</button>
